@@ -5,7 +5,7 @@ pool: ToscaServer
 - task: CmdLine@2
   displayName: 'Run Tosca CI'
   inputs:
-    script: '$(Agent.HomeDirectory)\\_work\\Client\\ToscaCIClient.exe -m distributed -t junit -r $(Agent.HomeDirectory)\\_work\\Client\\ToscaCI.xml'
+    script: '$(Agent.HomeDirectory)\\_work\\Client\\ToscaCIClient.exe -m local -t junit -r $(Agent.HomeDirectory)\\_work\\Client\\ToscaCI.xml'
     
 - task: PublishTestResults@2
   inputs:
