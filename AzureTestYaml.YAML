@@ -1,16 +1,6 @@
 trigger:
+- task: BatchScript@1
+  inputs:
+    filename: 'C:\Program Files (x86)\TRICENTIS\Tosca Testsuite\ToscaCI\Client'
+    arguments: 'ToscaCIClient.exe'
 - master
-
-pool: ToscaServer
-- task: CmdLine@2
-  displayName: 'Run Tosca CI'
-  inputs:
-    script: 'ToscaCIClient.exe -m local -t junit -r ToscaCI.xml'
-    
-- task: PublishTestResults@2
-  inputs:
-    testResultsFormat: 'JUnit'
-    testResultsFiles: '**/ToscaCI*.xml'
-    searchFolder: '$(Common.TestResultsDirectory)'
-    failTaskOnFailedTests: true
-    testRunTitle: 'Publish ToscaCI Test Results'
