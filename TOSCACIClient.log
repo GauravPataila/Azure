@@ -1,0 +1,90 @@
+2019-09-16 11:59:11,135 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost:8732/TOSCARemoteExecutionService
+2019-09-16 11:59:11,158 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-09-16 11:59:11,158 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-09-16 11:59:15,757 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+There was no endpoint listening at http://localhost:8732/TOSCARemoteExecutionService that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Unable to connect to the remote server
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+No connection could be made because the target machine actively refused it 127.0.0.1:8732
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   at TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-09-16 11:59:37,767 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost:8732/TOSCARemoteExecutionService
+2019-09-16 11:59:37,795 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-09-16 11:59:37,795 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-09-16 11:59:41,949 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+There was no endpoint listening at http://localhost:8732/TOSCARemoteExecutionService that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Unable to connect to the remote server
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+No connection could be made because the target machine actively refused it 127.0.0.1:8732
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   at TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
+2019-09-16 11:59:42,873 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher - http://localhost:8732/TOSCARemoteExecutionService
+2019-09-16 11:59:42,895 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Starting remote execution
+2019-09-16 11:59:42,895 [1] INFO  TOSCAContinuousIntegration.TOSCACIClient.Dispatching.AbstractRemoteDispatcher - Configuration File Path:
+2019-09-16 11:59:47,037 [1] ERROR TOSCAContinuousIntegration.TOSCACIClient.Program - Main: EndpointNotFoundException occured
+There was no endpoint listening at http://localhost:8732/TOSCARemoteExecutionService that could accept the message. This is often caused by an incorrect address or SOAP action. See InnerException, if present, for more details.
+
+Server stack trace: 
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+   at System.ServiceModel.Channels.HttpOutput.Send(TimeSpan timeout)
+   at System.ServiceModel.Channels.HttpChannelFactory`1.HttpRequestChannel.HttpChannelRequest.SendRequest(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.RequestChannel.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Dispatcher.RequestChannelBinder.Request(Message message, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannel.Call(String action, Boolean oneway, ProxyOperationRuntime operation, Object[] ins, Object[] outs, TimeSpan timeout)
+   at System.ServiceModel.Channels.ServiceChannelProxy.InvokeService(IMethodCallMessage methodCall, ProxyOperationRuntime operation)
+   at System.ServiceModel.Channels.ServiceChannelProxy.Invoke(IMessage message)
+
+Exception rethrown at [0]: 
+   at System.Runtime.Remoting.Proxies.RealProxy.HandleReturnMessage(IMessage reqMsg, IMessage retMsg)
+   at System.Runtime.Remoting.Proxies.RealProxy.PrivateInvoke(MessageData& msgData, Int32 type)
+   at TOSCAContinuousIntegration.TOSCACIClient.ServiceReference1.IRemoteExecutionService.ExecuteWithoutConfig(String usernameHash, String passwordHash, String resultType)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+Unable to connect to the remote server
+   at System.Net.HttpWebRequest.GetRequestStream(TransportContext& context)
+   at System.Net.HttpWebRequest.GetRequestStream()
+   at System.ServiceModel.Channels.HttpOutput.WebRequestHttpOutput.GetOutputStream()
+No connection could be made because the target machine actively refused it 127.0.0.1:8732
+   at System.Net.Sockets.Socket.DoConnect(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.ServicePoint.ConnectSocketInternal(Boolean connectFailure, Socket s4, Socket s6, Socket& socket, IPAddress& address, ConnectSocketState state, IAsyncResult asyncResult, Exception& exception)
+   at TOSCAContinuousIntegration.TOSCACIClient.Dispatching.CiDispatcher.Execute()
+   at TOSCAContinuousIntegration.TOSCACIClient.Program.Main(String[] args)
